@@ -6,25 +6,16 @@ while True:
     palavras = palavra.split("-")
     p = 0
     for i in palavras:
-        if p == 0:
-            if i[0] == "C" or i[-1] == "C":
+        if (i[0] == "C" or i[-1] == "C") and p == 0:
                 cont += 1
-        elif p == 1:
-            if i[0] == "O" or i[-1] == "0":
+        elif (i[0] == "O" or i[-1] == "0") and p == 1:
                 cont += 1
-        elif p == 2:
-            if i[0] == "B" or i[-1] == "B":
+        elif (i[0] == "B" or i[-1] == "B") and p == 2:
                 cont += 1
-        elif p == 3:
-            if i[0] == "O" or i[-1] == "O":
+        elif (i[0] == "O" or i[-1] == "O") and p == 3:
                 cont += 1
-        elif p == 4:
-            if i[0] == "L" or i[-1] == "L":
+        elif i[0] == "L" or i[-1] == "L":
                 cont += 1
         p += 1
-    if cont > 4:
-        print("GRACE HOPPER")
-    else:
-        print("BUG")
+    print("GRACE HOPPER") if cont > 4 else  print("BUG")
     cont = 0
-        
