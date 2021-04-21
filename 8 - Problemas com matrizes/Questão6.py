@@ -1,6 +1,5 @@
 #matriz = [[1,1,1,1],[2,2,2,2],[3,3,3,3]]
 
-
 #Criando a primeira Matriz
 matriz = []
 for i in range(3):
