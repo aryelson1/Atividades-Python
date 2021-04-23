@@ -12,10 +12,13 @@ print("Matriz:")
 for i in range(n):
     for j in range(n):
         if j == 0:
-             print("  ",matriz[i][j], end = '  ')
+             print(" ",matriz[i][j], end = '  ')
         else:
-            print(matriz[i][j], end = '  ')
-    print()
+            if j == n-1:
+                 print(matriz[i][j])
+            else:
+                print(matriz[i][j], end = '  ')
+
 print()
 print("Diagonal Principal:")
 for i in range(1,n):
@@ -27,12 +30,13 @@ for i in range(n):
 for i in range(n):
     for j in range(n):
         if matriz[i][j] != " ":
-            print(matriz[i][j],end="")
+            print(" ",matriz[i][j], end = '')
             break
         else:
-            print(matriz[i][j], end = ' ')
+             print(" ",matriz[i][j], end = '')
     print()
- 
+
+print()
 matriz = []
 cont = 1
 for i in range(n):
@@ -43,7 +47,7 @@ for i in range(n):
     matriz.append(linha)  
 
 
-print()
+
 print("Diagonal Secundaria:")
 matriz.reverse()
 for i in range(1,n):
@@ -56,8 +60,8 @@ matriz.reverse()
 for i in range(n):
     for j in range(n):
         if matriz[i][j] != " ":
-            print(matriz[i][j],end="")
+            print(" ",matriz[i][j], end = '')
             break
         else:
-            print(matriz[i][j], end = ' ')
+            print(" ",matriz[i][j], end = '')
     print()
