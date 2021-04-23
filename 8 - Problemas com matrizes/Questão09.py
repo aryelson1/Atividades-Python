@@ -9,14 +9,6 @@ for i in range(3):
         linha.append(int(input("linha %i e Coluna %i: "%(i,j))))
     matriz.append(linha)
 
-#Criando a segunda Matriz
-matriz2 = []
-for i in range(3):
-    linha = []
-    for j in range(3):
-        linha.append(int(input("linha %i e Coluna %i: "%(i,j))))
-    matriz2.append(linha)
-
 #Somando os elementos das colunas
 somas = []
 for i in range(3):
