@@ -7,7 +7,6 @@ for i in range(n):
         linha.append(cont)
         cont += 1
     matriz.append(linha)
-
 print("Matriz:")
 for i in range(n):
     for j in range(n):
@@ -35,7 +34,6 @@ for i in range(n):
         else:
              print(" ",matriz[i][j], end = '')
     print()
-
 print()
 matriz = []
 cont = 1
@@ -45,9 +43,6 @@ for i in range(n):
         linha.append(cont)
         cont += 1
     matriz.append(linha)  
-
-
-
 print("Diagonal Secundaria:")
 matriz.reverse()
 for i in range(1,n):
