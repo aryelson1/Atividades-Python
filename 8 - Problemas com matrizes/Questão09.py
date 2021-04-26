@@ -1,6 +1,6 @@
 #matriz = [[2,7,6],[9,5,1],[4,3,8]]
-#matriz = [[1,2,3],[4,5,6], [9,0,7]]
-
+matriz = [[1,2,3],[4,5,6], [9,0,7]]
+'''
 #Criando a primeira Matriz
 matriz = []
 for i in range(3):
@@ -8,7 +8,7 @@ for i in range(3):
     for j in range(3):
         linha.append(int(input("linha %i e Coluna %i: "%(i,j))))
     matriz.append(linha)
-
+'''
 #Somando os elementos das colunas
 somas = []
 for i in range(3):
